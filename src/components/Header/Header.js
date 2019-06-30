@@ -5,7 +5,7 @@ import logo from '../../assets/images/avatar.jpg';
 import './Header.scss';
 
 const Header = props => {
-  const { title, subTitle, text } = props;
+  const { title, subTitle } = props;
 
   return (
     <div className="header">
@@ -15,7 +15,6 @@ const Header = props => {
       <div className="header-info">
         <h1 className="header-title">{title}</h1>
         <h2 className="header-subtitle">{subTitle}</h2>
-        <p className="header-text">{text}</p>
       </div>
     </div>
   );
@@ -23,14 +22,12 @@ const Header = props => {
 
 Header.defaultProps = {
   title: 'Hello World',
-  subTitle: 'This is a subtitle',
-  text: 'This some text for the header component'
+  subTitle: 'This is a subtitle'
 };
 
 Header.propTypes = {
   title: PropTypes.string,
-  subTitle: PropTypes.string,
-  text: PropTypes.string
+  subTitle: PropTypes.string
 };
 
 export default Header;

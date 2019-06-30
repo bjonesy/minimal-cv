@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Avatar.scss';
 
@@ -7,7 +8,9 @@ const Avatar = props => {
 
   return (
     <div className="avatar">
-      <img src={logo} alt="Avatar" />
+      <Link to="/">
+        <img src={logo} alt="Avatar" />
+      </Link>
     </div>
   );
 };

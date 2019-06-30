@@ -6,7 +6,7 @@ import Avatar from '../Avatar/Avatar';
 describe('Header', () => {
   let mountedHeader;
   beforeEach(() => {
-    mountedHeader = shallow(<Header title="Hello World" subTitle="A subtitle" text="Some text" />);
+    mountedHeader = shallow(<Header title="Hello World" subTitle="A subtitle" />);
   });
 
   it('renders without crashing', () => {
@@ -26,10 +26,5 @@ describe('Header', () => {
   it('should equal props subTitle', () => {
     const headerSubTitle = mountedHeader.find('.header-subtitle').text();
     expect(headerSubTitle).toEqual('A subtitle');
-  });
-
-  it('should equal props text', () => {
-    const headerText = mountedHeader.find('.header-text').text();
-    expect(headerText).toEqual('Some text');
   });
 });

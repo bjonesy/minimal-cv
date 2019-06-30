@@ -1,7 +1,14 @@
 {
   "profile": {
     "name": "Brandon Jones",
-    "role": "Senior Application Developer at Blue Sombrero",
-    "description": "I have over 7+ years of professional experience in web and software development, primarily focused on front-end and UI engineering with more recent experience in full-stack development. I have a passion for solving problems, love working in a team-oriented environment, and am self-motivated to continuously learn and develop new skills."
+    "role": "Senior Application Developer at Blue Sombrero"
+  },
+  "information": {
+    "about": "I have over 7+ years of professional experience in web and software development, primarily focused on front-end and UI engineering with more recent experience in full-stack development. I have a passion for solving problems, love working in a team-oriented environment, and am self-motivated to continuously learn and develop new skills.",
+    "contact": {
+      "email": "brandon.jones1985@gmail.com",
+      "twitter": "https://www.twitter.com/BrandonJ0nes",
+      "github": "https://github.com/bjonesy"
+    }
   }
 }
