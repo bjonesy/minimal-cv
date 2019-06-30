@@ -11,8 +11,15 @@ let mockResponse = {
   data: {
     profile: {
       name: 'Bruce Wayne',
-      role: 'Trying to be a good developer',
-      description: 'A description'
+      role: 'Trying to be a good developer'
+    },
+    information: {
+      about: 'About me',
+      contact: {
+        email: 'brandon.jones1985@gmail.com',
+        twitter: 'https://www.twitter.com/BrandonJ0nes',
+        github: 'https://github.com/bjonesy'
+      }
     }
   }
 };

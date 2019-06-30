@@ -30,4 +30,32 @@ describe('Main', () => {
         expect(axios.get).toHaveBeenCalledWith('http://localhost:3000/data/data.json');
       });
   });
+
+  it('updates state with api data', () => {
+    return mountedMain
+      .instance()
+      .componentDidMount()
+      .then(() => {
+        expect(mountedMain.state()).toHaveProperty('profile', {
+          name: 'Bruce Wayne',
+          role: 'Trying to be a good developer'
+        });
+      });
+  });
+
+  it('updates state with api data', () => {
+    return mountedMain
+      .instance()
+      .componentDidMount()
+      .then(() => {
+        expect(mountedMain.state()).toHaveProperty('information', {
+          about: 'About me',
+          contact: {
+            email: 'brandon.jones1985@gmail.com',
+            twitter: 'https://www.twitter.com/BrandonJ0nes',
+            github: 'https://github.com/bjonesy'
+          }
+        });
+      });
+  });
 });
